@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //先弹出第一个框，提示用户输入第一个值  保存起来
+        //在弹出第二个框，提示用户输入第二个值  保存起来
+        //把这两个值相加，并将计算结果赋给一个新的变量（输出结果）
+        var num1 = prompt('请你输入第一个值:');
+        var num2 = prompt('请你输入第二个值:');
+        // var num3 = num1 + num2;  这是字符串型
+        var num3 = parseFloat(num1) + parseFloat(num2);  //转换成字符型 
+        alert('这是你需要的值:' + num3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
