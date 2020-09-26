@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //  弹出输入框，让用户输入时间  prompt返回的值都是字符串型  所以case 后面也要字符串型加''
+        // 当用户输入12点时弹出 中午好    
+        // 当用户输入18点时弹出 傍晚好 
+        // 当用户输入23点时弹出 深夜好 
+    /*    var times = prompt('请你输入时间');
+        switch (times) {
+                case '12':
+                    alert('中午好');
+                    break;
+                case '18':
+                    alert('傍晚好');
+                    break;
+                case '23':
+                    alert('深夜好');
+                    break;
+        }
+    */ 
+
+
+        //时间段的话 用if..else
+        // 当用户输入0-12(包含12)点时弹出 中午好    
+        // 当用户输入12-18（不包含12 包含18）点时弹出 傍晚好 
+        // 当用户输入18-24（不包含18 包含24）点时弹出 深夜好
+        var times = prompt('请你输入时间');
+        if (24 >= times && times >18) {
+            alert('深夜好');
+        } else if (18 >= times && times > 12) {
+            alert('傍晚好');
+        } else{
+            alert('中午好');
+        } 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
