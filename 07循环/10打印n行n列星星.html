@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var rows = prompt('请你输入行数');
+        var list = prompt('请你输入列数');
+        var str = '';    //如果想要显示出来而不是有数字的话 需要声明（var）这个 '' 空的字符串型
+        for (var i = 1; i <= rows; i++) {
+            for(var j = 1; j <= list; j++){
+                str = str +'⭐';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
