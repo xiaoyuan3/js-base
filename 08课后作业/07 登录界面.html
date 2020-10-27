@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var users = prompt('请输入你的用户名');
+        var num = prompt('请输入你的密码');
+        while (users !== 'admin' && num !== '123456') {  //需要用到 逻辑与 && 两个都为真时为真
+            prompt('请输入你的用户名');
+            prompt('请输入你的密码');
+        }
+        alert('成功进入页面')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
