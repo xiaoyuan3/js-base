@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //将数组[2,0,6,77,0,52,0,25,7]中大于等于10 的元素筛选出来，放到新数组。
+        //1. 声明一个新的数组用于存放新数组newArr。
+        //2. 遍历原来的就数组，找出大于等于 10 的元素。
+        //3，依次追加新数组 newArr。
+        //方法一：
+        var arr = [2,0,6,1,77,0,52,0,25,7];
+        var newArr = [];
+        var j = 0;  // 重点注意 数组元素小于10 不执行if里面的 语句 j不自加1，只有数组元素大于10 才自加1
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                //新数组索引号应该从0开始 一次递增
+                newArr[j] = arr[i];
+                j++;
+            }
+        }
+        console.log(newArr);
+
+        //方法二：
+        var arr =[2,0,6,1,77,0,52,0,25,7];
+        var newArr =[];
+        //刚开始 newArr.length 就是0  如果if条件语句满足 则newArr数组会自动加1 如果if条件语句不满足则不加
+        for (var i = 0;i < arr.length; i++) {
+            if(arr[i] >= 10) {
+                //新数组索引号应该从0开始  依次递增
+                newArr[newArr.length] = arr[i];
+            }
+        }
+        console.log(newArr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
